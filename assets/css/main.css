@@ -1615,8 +1615,6 @@ p {
 }
 
 
-
-
 /*====================
   DETAIL TICKET CSS
 ======================*/
@@ -1668,8 +1666,131 @@ h4, h5 {
   background-color: #c82333;
 }
 
+
+/*================
+  EDIT TIKET MODAL 
+  ================*/
+
+/* Styling modal */
+.modal-content {
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+
+/* Header modal */
+.modal-header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #dee2e6;
+  padding: 15px;
+  text-align: center;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Form */
+.modal-body .form-label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.modal-body .form-control {
+  border-radius: 6px;
+  border: 2px solid #000;
+  padding: 8px;
+  background-color: #f8f8f8;
+  font-size: 14px;
+}
+
+/* Layout kolom dua */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.col-md-6 {
+  width: calc(50% - 10px);
+}
+
+.col-md-12 {
+  width: 100%;
+}
+
+/* Textarea */
+.modal-body textarea {
+  resize: none;
+  height: 120px;
+}
+
+/* Bagian Lampiran */
+.lampiran-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+/* Styling untuk preview gambar */
+.d-flex .img-thumbnail {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Styling teks aksi */
+.text-danger {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Tombol */
+.modal-footer {
+  border-top: 2px solid #dee2e6;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.modal-footer .btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Tombol Simpan */
+.modal-footer .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.modal-footer .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Tombol Batal */
+.modal-footer .btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.modal-footer .btn-danger:hover {
+  background-color: #a71d2a;
+}
+
+
 /*=====================
-    GANTI PASSWORD CSS
+  GANTI PASSWORD CSS
 ======================*/
 
 /* Style umum */
@@ -1980,13 +2101,193 @@ h4 {
     width: 100%; }
 
 
+/*==================
+DATA TICKET CCS
+====================*/
+body {
+  background-color: #f8f9fa;
+}
+
+.card {
+  border-radius: 10px;
+  background: white;
+}
+
+.status-badge {
+  background-color: #f4d03f;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+h4, h5 {
+  font-weight: bold;
+}
+
+.history-box {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+.btn-data-tiket-chat {
+  background-color: #A646FF; /* Warna ungu */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn-data-tiket-detail {
+  background-color: #8401FF; /* Warna ungu */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn-data-tiket-edit {
+  background-color: #183AFF; /* Warna biru */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+
+
+
+/*====================
+  DETAIL TICKET CSS
+======================*/
+
+body {
+  background-color: #f8f9fa;
+}
+
+.card {
+  border-radius: 10px;
+  background: white;
+}
+
+.status-badge {
+  background-color: #f4d03f;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+h4, h5 {
+  font-weight: bold;
+}
+
+.history-box {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+.btn-close-ticket {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: block;
+  margin: auto;
+}
+
+.btn-ticket-closed {
+  background-color: #828282; /* Warna abu-abu */
+  color: white; /* Warna teks */
+  border: none;
+  padding: 12px 20px; /* Padding lebih besar agar lebih proporsional */
+  border-radius: 8px; /* Border lebih melengkung */
+  font-weight: bold;
+  font-size: 25px; /* Ukuran font lebih besar */
+  display: block;
+  width: 250px; /* Lebar tombol */
+  text-align: center;
+  margin: 20px auto; /* Pusatkan tombol */
+  cursor: not-allowed; /* Tampilkan cursor disabled */
+  opacity: 0.7; /* Buat tombol terlihat nonaktif */
+}
+
+
+.btn-close-ticket:hover {
+  background-color: #c82333;
+}
+
+.status-open {
+  background-color: #CBEEFF; /* Warna biru*/
+  color: black;
+}
+
+.status-closed {
+  background-color: #FFB1B3; /* Warna pink*/
+  color: red;
+}
+
+.btn-edit-ticket {
+  background-color: #828282; /* Warna abu */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn-edit-ticket-hidup {
+  background-color: #183AFF; /* Warna abu */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 
     /*======================================
     About Us CSS
 ========================================*/
-.about-us .content-left {
-  position: relative;
-  padding-right: 60px;
+.about-us .content-left{
+  padding: 0 30px; /* Sesuaikan padding agar rata */
+  flex: 1; /* Membuat kedua kolom memiliki lebar yang sama */
+}
+
+.about-us .content-right{
+  padding: 30px; /* Sesuaikan padding agar rata */
+  flex: 1;
+}
+
+.about-us .row.align-items-center {
+  display: flex;
+  align-items: flex-start; /* Menyamakan posisi di atas */
 }
 
 .about-us .content-left .single-img {
@@ -3087,6 +3388,7 @@ h4 {
   visibility: visible;
 }
 
+
 /*===========================
     13. Footer CSS 
 ===========================*/
@@ -3164,4 +3466,3 @@ h4 {
       .footer-social-links ul li a:hover {
         background: linear-gradient(#3763eb 0%, #6f58e8 100%);
         color: #fff; }
-

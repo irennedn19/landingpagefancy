@@ -11,7 +11,6 @@
         <!-- Place favicon.ico in the root directory -->
 
 		<!-- ========================= CSS here ========================= -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/bootstrap-5.0.0-alpha.min.css">
         <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
 		<link rel="stylesheet" href="assets/css/animate.css">
@@ -23,7 +22,7 @@
         <div class="container mt-5">
             <div class="card shadow-sm p-4">
                 <h4 class="mb-4">Detail Ticket
-                    <button class="btn-edit-ticket-hidup" data-bs-toggle="modal" data-bs-target="#editTiketModal">Edit</button>
+                    <button class="btn-edit-ticket">Edit</button>
                 </h4>
                 <div class="row content-section">
                     <div class="col-md-6">
@@ -46,7 +45,7 @@
                     <div class="col-md-6">
                         <div class="d-flex mb-3">
                             <p class="fw-bold w-50">Status</p>
-                            <p class="w-50"><span class="status-badge">Processed</span></p>
+                            <p class="w-50"><span class="status-badge status-closed">Closed</span></p>
                         </div>
                         <div class="d-flex mb-3">
                             <p class="fw-bold w-50">Created</p>
@@ -91,84 +90,11 @@
                     </div>
                 </div>
                 
-                <button class="btn-close-ticket mt-4">Close Ticket</button>
+                <button class="btn-ticket-closed">Ticket Closed</button>
             </div>
         </div>
-
-
-        <!-- ========================= edit tiket start ===================== -->
-
-        <div class="modal fade" id="editTiketModal" tabindex="-1" aria-labelledby="editTicketModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="editTicketModalLabel">Edit Tiket</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="editTicketForm">
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label">Nama *</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label">No. Telepon *</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label">Email *</label>
-                                    <input type="email" class="form-control" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label">Kategori *</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label">Peran *</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label class="form-label">Sub Kategori *</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="col-md-12 mb-3">
-                                    <label class="form-label">Judul *</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="col-md-12 mb-3">
-                                    <label class="form-label">Deskripsi *</label>
-                                    <textarea class="form-control" rows="3" required></textarea>
-                                </div>
-                                <div class="col-md-12 mb-3">
-                                    <label class="form-label">Lampiran</label>
-                                    <div class="d-flex">
-                                        <div class="me-2">
-                                            <img src="assets/img/sample-image.jpg" class="img-thumbnail" width="100">
-                                            <p class="text-center"><a href="#" class="text-danger">Hapus</a></p>
-                                        </div>
-                                        <label class="btn btn-secondary">
-                                            Upload file
-                                            <input type="file" class="d-none">
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-primary">Simpan</button>
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ========================= edit tiket edit ===================== -->
-
-
-        <!-- ========================= footer start ========================= -->
-        <footer class="footer pt-100">
+         <!-- ========================= footer start ========================= -->
+         <footer class="footer pt-100">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-3 col-lg-4 col-md-6">
@@ -267,7 +193,6 @@
         </a>
         
 		<!-- ========================= JS here ========================= -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="assets/js/bootstrap.bundle-5.0.0.alpha-min.js"></script>
 		<script src="assets/js/contact-form.js"></script>
         <script src="assets/js/count-up.min.js"></script>
